@@ -1,7 +1,7 @@
 Alance
 Accelerate Intellegence. Build the future.
 
-The open research platform for for quantum computing, AI, and simulation.
+The open research platform for quantum computing, AI, and simulation.
 
 Overview
 
@@ -31,3 +31,4 @@ Designed to integrate new libraries, quantum devices, and AI enhanced workflows.
 
 - Open Research Friendly
 Fully open-source under Apache Licence 2.0 to encourage collaboration and innovation. 
+
