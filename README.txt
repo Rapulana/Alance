@@ -1,19 +1,33 @@
-QuantStack: Lightweight Quantum Software Stack
+Alance
+Accelerate Intellegence. Build the future.
 
-QuantStack is an open-source framework for designing, compiling, executing,
-and analyzing quantum algorithms.
+The open research platform for for quantum computing, AI, and simulation.
+
+Overview
+
+Alance is a cutting edge quantum software platform designed to enable developers and researchers to build, optimize, and execute quantum workloads. It provides a hardware
+agnostic environment for quantum algorithms, simulation, and problem solving across domains like:
+
+- Cryptography
+- Materials Science
+- Machine Learning
+- Logistics and Optimization
+
+Think of Alance as the operarting system + app store for quantum computing - bridging the gap between complex quantum hardware and real world applications.
 
 Features
-- Clean modular architecture
-- Runs on Qiskit simulator backends
-- Includes built-in Bell state example
-- Docker-ready and testable
 
-Example
-'''python
-from executor import Executor
-from Algorithms import bell_state
+- Quantum Algorithm Development
+Buld and test algorithms with simplified, high performance tools.
 
-executor  = Executor()
-result = executor.run(bell_state())
-print(result["counts"])
+- Sumulation and Execution
+Run quantum workloads on multiple backends without worrying about hardware differences.
+
+- Analysis and Visualization
+Build-in tools for understanding results and optimizing performance.
+
+- Modular and Extensible
+Designed to integrate new libraries, quantum devices, and AI enhanced workflows.
+
+- Open Research Friendly
+Fully open-source under Apache Licence 2.0 to encourage collaboration and innovation. 
