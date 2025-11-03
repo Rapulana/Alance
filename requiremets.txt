@@ -1,2 +1,5 @@
-qiskit>=1.0.0
-numpy>=1.24.0
+qiskit==0.50
+numpy
+matplotlib
+jupyter
+pytest
