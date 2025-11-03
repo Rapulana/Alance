@@ -24,10 +24,6 @@ Build + Run + Analyze quantum programs with a simple developer-first toolkit.
 🔓 Fully open source.  
 🧰 Built on real industry-standard hardware models.
 
-![Alance Banner](https://user-images.githubusercontent.com/placeholder/banner)
-
-</div>
-
  🌟 What is Alance?
 
 Alance is the beginning of a quantum operating system — a programming toolkit that turns quantum hardware into a developer-friendly environment.
@@ -51,7 +47,7 @@ This v0.1-alpha release includes:
 > Works out of the box using "AerSimulator"
 
 ```bash
-git clone https://github.com/<your-username>/alance.git
+git clone https://github.com/<Rapulana>/alance.git
 cd alance
 
 python3.11 -m venv venv
@@ -59,3 +55,4 @@ source venv/bin/activate   # Windows: venv\Scripts\activate
 
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+
