@@ -1,15 +1,25 @@
-from qiskit import Aer, transpile, execute
+from typing import Dict, Any
+from qiskit import transpile, execute
+from qiskit.providers.aer import AerSimulator
+
 class Executor:
-    """Executes quantum circuits on the chosen backend."""
-    def __init__(self,
-                 backend_type="aer_simulator"):
+    """Executes QuantumCircuit on a chosen backend (default: AerSimulator)."""
+
+    def __init__(self, backend_name: str = "aer_simulator"):
+        
         try:
-            self.backend = Aer.get_backend(backend_type)
-        except Exception:
-            self.backend = Aer.get_backend("aer_simulator")
-            def run(self, circuit, shots=1024):
-                compiled = transpile(circuit, self.backend)
-                job = execute(compiled, backend=self.backend, shots=shots)
-                result = job.result()
-                counts = result.get_counts()
-                return {"counts": counts}
+            self.backend = AerSimulator()
+        except Exception as e:
+            
+            self.backend = AerSimulator()
+
+    def run(self, circuit, shots: int = 1024) -> Dict[str, Any]:
+        """
+        Transpile and execute the provided QuantumCircuit.
+        Returns a dict: {"counts": {...}}
+        """
+        compiled = transpile(circuit, self.backend)
+        job = execute(compiled, backend=self.backend, shots=shots)
+        result = job.result()
+        counts = result.get_counts()
+        return {"counts": counts}
