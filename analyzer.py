@@ -1,5 +1,10 @@
-def analyze_counts(counts: dict):
-    """Simple post-processing of measurement results."""
+from typing import Dict
+
+def analyze_counts(counts: Dict[str, int], precision: int = 3) -> Dict[str, float]:
+    """
+    Convert raw measurement counts to probabilities.
+    """
+    if not counts:
+        return {}
     total = sum(counts.values())
-    probs = {k: v / total for k, v in counts.items()}
-    return probs
+    return {k: round(v / total, precision) for k, v in counts.items()}
