@@ -1,4 +1,3 @@
-# alance/visualize.py
 from typing import Dict
 import matplotlib.pyplot as plt
 from qiskit.visualization import plot_histogram
