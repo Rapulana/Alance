@@ -1,4 +1,3 @@
-# alance/algorithms.py
 from qiskit import QuantumCircuit
 from qiskit.circuit.library import QFT
 
@@ -18,25 +17,15 @@ def teleportation_circuit():
     We prepare a simple |+> on qubit 0 to teleport.
     """
     qc = QuantumCircuit(3, 3)
-    # prepare |+> on qubit 0 as the state to teleport
     qc.h(0)
 
-    # create entanglement between qubit1 (Alice) and qubit2 (Bob)
     qc.h(1)
     qc.cx(1, 2)
 
-    # Bell measurement between qubit0 (state) and qubit1 (Alice)
     qc.cx(0, 1)
     qc.h(0)
     qc.measure([0, 1], [0, 1])
 
-    # Conditional corrections on qubit 2 (Bob)
-    # Qiskit classical conditionals require working with classical registers;
-    # simpler approach: include placeholders; executor handles classical logic if needed.
-    # For simulation this measurement then apply c_if style is fine, but for compatibility
-    # we'll keep the circuit representation minimal and rely on result interpretation.
-
-    # Final measurement of Bob's qubit
     qc.barrier()
     qc.measure(2, 2)
     return qc
@@ -54,17 +43,12 @@ def grover_search(n_qubits: int = 2, target: str = "11"):
 
     qc = QuantumCircuit(n_qubits, n_qubits)
 
-    # Initialize in superposition
     qc.h(range(n_qubits))
 
-    # Oracle to phase-flip the target
-    # For n=2 we implement a simple oracle using X gates and a controlled-Z emulation
-    # Flip target bits that are '0' to '1' via X
     for i, bit in enumerate(target):
         if bit == '0':
             qc.x(i)
-
-    # implement CZ for 2 qubits via H-CX-H on last qubit
+            
     if n_qubits == 1:
         qc.z(0)
     elif n_qubits == 2:
@@ -72,15 +56,12 @@ def grover_search(n_qubits: int = 2, target: str = "11"):
         qc.cx(0, 1)
         qc.h(1)
     else:
-        # Placeholder for larger n (not implemented in v1)
         pass
 
-    # Undo X flips
     for i, bit in enumerate(target):
         if bit == '0':
             qc.x(i)
 
-    # Diffusion (inversion about mean)
     for i in range(n_qubits):
         qc.h(i)
         qc.x(i)
@@ -98,7 +79,6 @@ def grover_search(n_qubits: int = 2, target: str = "11"):
         qc.x(i)
         qc.h(i)
 
-    # Measure
     qc.measure(range(n_qubits), range(n_qubits))
     return qc
 
@@ -113,3 +93,4 @@ def qft_circuit(n_qubits: int = 3, measure: bool = True):
     if measure:
         qc.measure(range(n_qubits), range(n_qubits))
     return qc
+
