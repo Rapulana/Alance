@@ -1,4 +1,3 @@
-# alance/cli.py
 import argparse
 from alance.algorithms import bell_state, teleportation_circuit, grover_search, qft_circuit
 from alance.executor import Executor
