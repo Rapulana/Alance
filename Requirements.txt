@@ -1,0 +1,4 @@
+qiskit==0.50
+numpy
+matplotlib
+pytest
