@@ -1,5 +1,0 @@
-qiskit==0.50
-numpy
-matplotlib
-jupyter
-pytest
