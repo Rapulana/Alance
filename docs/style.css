@@ -1,0 +1,20 @@
+.buttons {
+  margin-top: 25px;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-left: 15px;
+  padding: 12px 28px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.contact-button:hover {
+  background: limegreen;
+  color: white;
+}
