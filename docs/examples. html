@@ -1,0 +1,10 @@
+<section class="content">
+  <h1>Examples</h1>
+  <p>Try these example projects using Alance SDK:</p>
+
+  <ul>
+    <li>Quantum Hello World</li>
+    <li>AI Image Classification</li>
+    <li>Robotics Control Demo</li>
+  </ul>
+</section>
