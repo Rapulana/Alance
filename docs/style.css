@@ -11,16 +11,13 @@
 body { background-color: var(--bg); color: var(--text); }
 .gradient { background: linear-gradient(90deg,var(--accent-start),var(--accent-end)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
 
-/* Navbar */
 .navbar { display:flex; align-items:center; justify-content:space-between; padding:1rem 2rem; background: rgba(20,20,20,0.95); position:fixed; width:100%; top:0; z-index:100; }
 .navbar nav a { margin:0 0.8rem; text-decoration:none; color:var(--text); font-weight:500; }
 .navbar nav a:hover { color: var(--accent-end); }
 .logo { height:40px; }
 
-/* Search Input */
 .search-input { padding:0.5rem 1rem; border-radius:8px; border:none; background:#141414; color:#fff; margin-left:1rem; }
 
-/* Layout */
 .docs-container { display:flex; margin-top:5rem; min-height:calc(100vh - 5rem); }
 .sidebar { width:250px; background:#101010; padding:2rem 1rem; border-right:1px solid #222; position:sticky; top:5rem; }
 .sidebar h2 { color: var(--accent-end); margin-bottom:1rem; }
@@ -31,16 +28,13 @@ body { background-color: var(--bg); color: var(--text); }
 .search-results { margin-top:1rem; }
 .search-results div a { color: var(--accent-end); display:block; padding:0.3rem 0; text-decoration:none; }
 
-/* Content */
 .content { flex:1; padding:2rem 3rem; color:#ddd; }
 .content h1 { font-size:2.5rem; margin-bottom:1rem; }
 .content h2 { font-size:1.8rem; margin:1rem 0; }
 pre { background:#141414; padding:1rem; border-radius:8px; overflow-x:auto; margin:1rem 0; }
 
-/* Footer */
 .footer { text-align:center; padding:2rem; background:#101010; border-top:1px solid #222; color:#aaa; }
 
-/* Buttons */
 .btn { padding:0.7rem 1.5rem; border-radius:30px; text-decoration:none; font-weight:600; transition:0.3s; display:inline-block; margin-top:1rem; }
 .primary { background:linear-gradient(90deg,var(--accent-start),var(--accent-end)); color:#000; }
 .primary:hover { opacity:0.8; }
