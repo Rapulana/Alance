@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getting Started | Alance Docs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <img src="../assets/logo.png" alt="Alance Logo" class="logo" />
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Docs</a>
+      <a href="intro.html">Getting Started</a>
+    </nav>
+    <input type="text" id="searchBox" placeholder="Search Docs..." class="search-input">
+  </header>
+
+  <main class="docs-container">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="intro.html">Getting Started</a></li>
+        <li><a href="api.html">API Reference</a></li>
+        <li><a href="examples.html">Examples</a></li>
+      </ul>
+      <div id="searchResults" class="search-results"></div>
+    </aside>
+
+    <section class="content">
+      <h1>Getting Started</h1>
+      <p>Welcome to the Alance Developer Kit (ADK). Follow these steps to install and initialize your SDK.</p>
+
+      <h2>Installation</h2>
+      <pre><code class="language-python">pip install alance-sdk</code></pre>
+
+      <h2>Initialize SDK</h2>
+      <pre><code class="language-python">import alance
+
+alance.init(api_key="your_api_key_here")</code></pre>
+
+      <p>Start building your first AI or Quantum app with just a few lines of code!</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Alance. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>
