@@ -3,42 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alance Quantum Developer Toolkit</title>
+  <title>Alance Docs | Developer Kit</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Prism.js for code highlighting -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-c.min.js"></script>
+  <!-- Lunr.js for search -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1>⚛️ Alance Quantum Developer Toolkit</h1>
-    <p>Building the future of Quantum + AI, from South Africa.</p>
-    <div class="buttons">
-      <a href="#" class="cta-button">Try Alance</a>
-      <a href="mailto:rapulanapascal15@gmail.com" class="contact-button">Contact Me</a>
-    </div>
+  <header class="navbar">
+    <img src="../assets/logo.png" alt="Alance Logo" class="logo" />
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Docs</a>
+      <a href="intro.html">Getting Started</a>
+      <a href="api.html">API</a>
+      <a href="examples.html">Examples</a>
+    </nav>
+    <input type="text" id="searchBox" placeholder="Search Docs..." class="search-input">
   </header>
 
-  <section id="features">
-    <h2>Why Alance?</h2>
-    <ul>
-      <li>Run quantum circuits locally</li>
-      <li>Simulate Qiskit and AI algorithms</li>
-      <li>Visualize quantum results in real-time</li>
-      <li>Open, community-driven, and built for developers</li>
-    </ul>
-  </section>
+  <main class="docs-container">
+    <aside class="sidebar">
+      <h2>Docs</h2>
+      <ul>
+        <li><a href="intro.html">Getting Started</a></li>
+        <li><a href="api.html">API Reference</a></li>
+        <li><a href="examples.html">Examples</a></li>
+      </ul>
+      <div id="searchResults" class="search-results"></div>
+    </aside>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      Alance is an open-source quantum developer toolkit designed to make quantum computing more accessible.
-      Founded in South Africa, it merges speed, intelligence, and simplicity for researchers and developers.
-    </p>
-  </section>
+    <section class="content">
+      <h1><span class="gradient">Alance Developer Docs</span></h1>
+      <p>Welcome to the Alance Developer Documentation. Learn how to integrate, build, and deploy with the Alance SDK.</p>
+      <h2>What’s Inside</h2>
+      <ul>
+        <li><strong>Getting Started:</strong> Install the SDK and set up your environment.</li>
+        <li><strong>API Reference:</strong> Explore detailed SDK methods and classes.</li>
+        <li><strong>Examples:</strong> Build real-world quantum + AI apps using Alance.</li>
+      </ul>
+      <p><a href="intro.html" class="btn primary">Start Learning →</a></p>
+    </section>
+  </main>
 
-  <footer>
-    <p>© 2025 Alance Quantum — Built in South Africa</p>
-    <p>👨‍💻 Founder & CEO: Pascal Rapulana | 📧 rapulanapascal15@gmail.com</p>
+  <footer class="footer">
+    <p>© 2025 Alance. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
+  <script src="search.js"></script>
 </body>
 </html>
