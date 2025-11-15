@@ -1,0 +1,21 @@
+:root {
+  --ifm-color-primary: #00d084;
+  --ifm-color-primary-dark: #00b46a;
+}
+
+html, body, .main-wrapper {
+  background: linear-gradient(180deg,#0b1020 0%, #071021 55%);
+}
+
+h1, h2, h3 { color: #ffffff; }
+p, li { color: #cbd5e1; }
+
+.button {
+  display: inline-block;
+  background: var(--ifm-color-primary);
+  color: #001;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
