@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examples</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<header>
+    <h1>Examples</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="sdk.html">SDK</a>
+    <a href="examples.html">Examples</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+    <h2>Hello Quantum World</h2>
+    <pre>
+from alance import QuantumCircuit
+
+qc = QuantumCircuit(1)
+qc.h(0)
+qc.measure()
+print(qc.run())
+    </pre>
+</section>
+
+</body>
+</html>
