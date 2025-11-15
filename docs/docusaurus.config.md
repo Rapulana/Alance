@@ -72,7 +72,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Alance — Rapulana.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Alance Technologies.`,
     },
   },
 };
