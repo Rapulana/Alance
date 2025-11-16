@@ -5,45 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "alance"
 version = "0.1.0"
-description = "A lightweight Python SDK combining NumPy-like arrays, automatic differentiation, and a tiny quantum simulator."
+description = "NumPy + Autodiff + Quantum simulator."
 readme = "README.md"
 requires-python = ">=3.9"
 license = { file = "LICENSE" }
-
-authors = [
-    { name = "Pascal Rapulana", email = "your-email@example.com" }
-]
-
-keywords = [
-    "numpy",
-    "autodiff",
-    "quantum-computing",
-    "machine-learning",
-    "gpu",
-    "python-sdk",
-    "arrays"
-]
-
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-]
-
-dependencies = [
-    "numpy>=1.20",
-]
+authors = [{ name = "Pascal Rapulana" }]
+dependencies = ["numpy>=1.20"]
 
 [tool.setuptools]
 packages = ["alance"]
-
-[tool.setuptools.package-data]
-"alance" = ["**/*.py"]
-
-[project.urls]
-Homepage = "https://github.com/rapulana/Alance"
-Issues = "https://github.com/rapulana/Alance/issues"
