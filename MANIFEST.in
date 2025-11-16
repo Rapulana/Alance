@@ -1,0 +1,17 @@
+# Include the README and license
+include README.md
+include LICENSE
+
+# Include package data inside alance/
+recursive-include alance *.py
+recursive-include alance *.txt
+recursive-include alance *.json
+
+# Include examples/
+recursive-include examples *.py
+
+# Include tests/
+recursive-include tests *.py
+
+# Exclude Python cache folders
+prune **/__pycache__
