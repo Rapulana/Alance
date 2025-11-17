@@ -4,13 +4,13 @@ Author: Pascal Rapulana
 """
 
 from . import array
-from . import utils
+from . import core
 from . import autodiff
 from . import quantum
 
 __all__ = [
     "array",
-    "utils",
+    "core",
     "autodiff",
     "quantum"
 ]
