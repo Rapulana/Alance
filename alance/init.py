@@ -1,10 +1,22 @@
-"""Alance package (extended)."""
-from .core import Array, set_device, get_device
-from .autodiff import Variable
-from .quantum import Simulator, Qubit, H, X, CNOT, RX, RZ, measure
+"""
+Alance: NumPy + Autodiff + Quantum simulator
+Author: Pascal Rapulana
+"""
+
+from . import array
+from . import utils
+from . import autodiff
+from . import quantum
 
 __all__ = [
-    "Array", "set_device", "get_device",
-    "Variable",
-    "Simulator", "Qubit", "H", "X", "CNOT", "RX", "RZ", "measure"
+    "array",
+    "utils",
+    "autodiff",
+    "quantum"
 ]
+
+__version__ = "0.1.0"
+
+def info():
+    print("Alance version", __version__)
+    print("Modules available:", __all__)
